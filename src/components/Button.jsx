@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const Button = () => {
+const Button = ({ text, func }) => {
   return (
-    <div>Button</div>
-  )
-}
+    <button
+      onClick={func}
+      className="px-8 py-4 border-[2px] border-blue-400 border-solid blueShadow duration-200 mx-auto bg-slate-950 rounded-md "
+    >
+      <p>{text}</p>
+    </button>
+  );
+};
 
-export default Button
+export default Button;
