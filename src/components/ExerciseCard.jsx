@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ExerciseCard = () => {
+const ExerciseCard = ({exercise}) => {
   return (
     <div>ExerciseCard</div>
   )
