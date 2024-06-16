@@ -11,7 +11,7 @@ const Workout = ({ workouts }) => {
     >
       <div className="flex flex-col gap-4">
         {workouts.map((exercise, i) => {
-          return <ExerciseCard exercise={exercise} key={i} />;
+          return <ExerciseCard exercise={exercise} key={i} i={i} />;
         })}
       </div>
     </SectionWrapper>
